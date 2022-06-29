@@ -1,0 +1,482 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    color: #222;
+    margin: 0;
+    position: relative;
+
+
+  }
+
+.body .background{
+  center
+}
+
+  .test {
+    font-size: 200px;
+  }
+
+
+
+.wrapper {
+    text-align: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-image: url(img/az.jpg);
+
+}
+
+h1 {
+    font-size: 5.5rem;
+    font-family: 'Ranchers', cursive;
+    
+}
+
+.name-header {
+    padding-top: 200px;
+    color: pink;/* text-shadow: 0 3px 20px -2px #000; */
+}
+
+
+
+.loml-header {
+  padding: 100px 0 50px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5rem;
+  margin: 0 200px;
+}
+
+
+
+#loml i {
+  font-size: 75px;
+  opacity: 0.2;
+  color: red;
+  transform: rotateZ(40deg);
+}
+
+
+.content {
+  text-align: center;
+  padding: 0 0 10%;
+}
+
+#about {
+  /* background-color: #eee; */
+}
+
+
+
+
+
+h2 {
+    margin-top: 3%;
+    font-size: 2.5rem;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 1.5px;
+}
+
+.timeline h3 {
+  position: relative;
+  top: 250px;
+  font-size: 1.5rem;
+  color: #D5D5D5;
+  border: solid 1px #D5D5D5;
+  margin: 0 75px;
+  z-index: 2;
+  font-family: 'Ranchers', cursive;
+}
+
+.h3-content {
+  font-family: 'Dancing Script', cursive;
+  color: #D5D5D5;
+  padding: 0 20%;
+  font-size: 2.3rem;
+}
+
+
+.title-p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 1% 30%;
+    letter-spacing: 1.2px;
+    color: white;;
+}
+
+.statement {
+  padding: 0 250px;
+  line-height: 1.3;
+
+}
+
+
+
+
+/* NAVIGATION */
+
+nav {
+  /* position: absolute; */
+  right: 0;
+  position: fixed;
+  /* background: #f5f5f5; */
+  background: #D5D5D5;
+  top:0;
+  left: 0;
+  /* box-shadow: 0 3px 10px -2px #D5D5D5; */
+  z-index: 3;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+}
+nav ul {
+  right: 0;
+}
+
+nav ul li{
+  display:inline-block;
+  text-decoration: none;
+  margin: 10px 15px;
+  color: #D5D5D5;
+  /* list-style: none; */
+  font-size: 1.2rem;
+
+}
+
+nav ul li a {
+  text-decoration: underline 2px;
+  color: #9D84B7;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+
+/* TIMELINE */
+.timeline-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 50px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000; */
+}
+
+.timeline {
+  /* background-color: #000; */
+  /* width: 100%; */
+  color: #000;
+  /* height: 300px; */
+  height: 40vh;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.timeline-header {
+  text-align: center;
+  padding: 5% 0 0;
+  font-size: 2.5rem;
+
+}
+
+.timeline-container .timeline.year2021 {
+  background: url(img/img-2021.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.timeline-container .timeline.year2020 {
+  background: url(img/vegas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.timeline-container .timeline.year2019 {
+  background: url(img/img-2019.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.timeline-container .timeline.year2018 {
+  background: url(img/img-2018.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.timeline-container .timeline.year2017 {
+  background: url(img/img-2017.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.timeline-container .timeline.year2016 {
+  background: url(img/img-2016.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.timeline-container .timeline.year2015 {
+  background: url(img/img-2015.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.timeline-container .timeline.year2014 {
+  background: url(img/img-2014.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.timeline:hover {
+  box-shadow: 0 0 10px;
+  transform: scale(1.01);
+
+}
+
+.y2021, .y2020, .y2019, .y2018 , .y2017, .y2016, .y2015, .y2014 {
+  display: none;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  font-size: 20px;
+  text-align: center;
+   margin-top: 20px;
+}
+
+
+.y2021 ul li, .y2020 ul li, .y2019 ul li, .y2018 ul li, .y2017 ul li, .y2016 ul li,
+ .y2015 ul li , .y2014 ul li {
+  list-style: none;
+}
+
+
+
+.header {
+  font-size: 100px;
+  padding: 20px 0 5px 0;
+  color: #D5D5D5;
+  font-family: 'Ranchers', cursive;
+}
+
+
+.dates-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* background-color: #eee; */
+}
+
+h5{
+  font-size: 18px;
+}
+
+
+.vacay, .friends, .dates{
+  /* border: 2px solid #222; */
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+  color: #D5D5D5;
+  /* margin: 20px 0 50px; */
+  padding: 50px 0 0;
+
+}
+
+.vacay ul li , .friends ul li , .dates ul li {
+  font-size: 14px;
+}
+
+hr {
+  width: 10%;
+  margin: 50px auto;
+  border-top: 1px dotted #eee;
+  overflow:hidden;
+
+}
+
+.fas.fa-utensils, .fas.fa-plane-departure, .fas.fa-users {
+  font-size: 30px;
+}
+
+
+.fun-pics {
+  width: 250px;
+  height: 300px;
+  padding: 3px;
+
+
+}
+
+.funtimes-pics-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+#footer {
+  background-color: #eee;
+  padding: 50px;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+#footer .footer-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 10%; */
+
+}
+
+#footer .footer-container ul li {
+  margin: 0 2%;
+  list-style-type: none;
+}
+
+#footer .footer-container ul li i {
+  font-size: 30px;
+
+}
+
+#footer .footer-container ul a:visited {
+  text-decoration: none;
+}
+
+.footer-p {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #D5D5D5;
+}
+
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-twitter-square {
+  color: #00acee;
+}
+
+.fa-linkedin {
+  color: #0e76a8;
+}
+
+.fa-instagram-square {
+  color: #d6249f;
+  /* color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+}
+
+
+#loml {
+  background-color: #D5D5D5;
+ }
+
+
+
+
+@media (max-width: 1175px) {
+  .timeline-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statement {
+    padding: 0 100px;
+  }
+
+  .loml-header {
+    font-size: 3rem;
+    /* padding: 100px 0 50px; */
+    margin: 0 50px;
+  }
+
+  #loml i {
+    font-size: 3rem;
+  }
+
+  .timeline-container .timeline.year2021, .timeline-container .timeline.year2020, .timeline-container .timeline.year2019, .timeline-container .timeline.year2018 {
+
+    background-position: center center;
+
+  }
+}
+
+@media (max-width: 500px) {
+  .timeline-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .wrapper {
+    background-color: #D5D5D5;
+    background-image: none;
+    color: #9D84B7;
+  /* background-image: linear-gradient(315deg, #000000 0%, #FFF9B6 74%); */
+  }
+
+  .loml-header {
+    font-size: 2.5rem;
+    /* padding: 100px 0 50px; */
+    margin: 0 50px;
+  }
+  .fun-pics {
+    width: 95%;
+    height: 400px;
+    padding: 2px;
+
+
+  }
+
+  .title-p {
+    margin: 1% 20%;
+  }
+
+  .vacay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 10px 0 0 0;
+    height: 75px;
+    width: 100px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  .name-header {
+    color: #9D84B7;
+}
+
+.h3-content {
+  font-size: 1.6rem;
+  padding: 0 5%;
+}
+
+
+
+  #loml i {
+    font-size: 2.5rem;
+  }
+
+}
